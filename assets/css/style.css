@@ -1,5 +1,5 @@
 :root {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 * {
@@ -7,7 +7,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 5vmin;
 }
 
 a {
@@ -38,7 +38,7 @@ ul {
 }
 
 .main-navigate__item:hover {
-  background-color:rgb(14, 84, 84);
+    background-color: rgb(14, 84, 84);
 }
 
 .main-navigate__link {
@@ -48,32 +48,29 @@ ul {
 }
 
 .main-navigate__item:not(.main-navigate__item:last-child) {
-  border-right: 1px solid rgb(14, 84, 84);
+    border-right: 1px solid rgb(14, 84, 84);
 }
 
 .main-navigate__list__sublist {
-  display: none;
-  position: absolute;
-  left: 0;
-  right: 0;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 
-.main-navigate__item:hover>.main-navigate__list__sublist{
-  display: block;
+.main-navigate__item:hover > .main-navigate__list__sublist {
+    display: block;
 }
 
 .main-navigate__item__subitem {
-  display: block;
-  border-top: 1px solid rgb(14, 84, 84);
+    display: block;
+    border-top: 1px solid rgb(14, 84, 84);
 }
-/* 
-display
-block-color
 
-pos
-over
-object
-
-font
-text
- */
+.main-navigate__right__sublist {
+    position: absolute;
+    top: -3%;
+    left: 100%;
+    width: 200px;
+    z-index: 9;
+}
